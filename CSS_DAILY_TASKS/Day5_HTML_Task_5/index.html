@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.contact-form {
+    width: 400px;
+    background-color: white;
+    padding: 30px;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: blue;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color:orange;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:blue ;
+}
+
+/* Mobile View */
+@media (max-width: 500px) {
+
+    .contact-form {
+        width: 90%;
+        padding: 20px;
+    }
+
+}
+
+</style>
+
+<body>
+
+    <div class="contact-form">
+
+        <h2>Contact Us</h2>
+
+        <form>
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter your phone number">
+
+            <label>Message</label>
+            <textarea placeholder="Enter your message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
